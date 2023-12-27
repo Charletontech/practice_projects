@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://cdn.socket.io/socket.io-3.0.1.min.js"></script> -->
+</head>
+<body>
+    <div style="width: 100%; display: block; margin: auto;">
+        <input class="field" type="text">
+        <button class="btn">Send</button>
+    </div>
+</body>
+<script>
+    // Your client-side JavaScript (script.js)
+    //const io = io('http://localhost:8080')
+
+    
+    //io.on('connection')
+
+    var text = document.querySelector('.field')
+    var btn = document.querySelector('.btn')
+    btn.addEventListener('click', function () {
+        console.log(text.value);
+        
+        //io.emit('message', text)
+    })
+</script>
+</html>
